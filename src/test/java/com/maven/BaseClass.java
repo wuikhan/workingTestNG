@@ -1,7 +1,13 @@
 package com.maven;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import static org.testng.Assert.assertEquals;
+
 import java.util.concurrent.TimeUnit;
+
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -14,11 +20,20 @@ public class BaseClass {
 	public void setup() {
 		System.setProperty("webdriver.chrome.driver", "drivers/chromedriver2");
 		WebDriver  driver = new ChromeDriver();
-//	    driver.manage().window().fullscreen();
 	    driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
 	    driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	    driver.get("https://opensource-demo.orangehrmlive.com/");
-// this is a working code this will open browser in chrome driver
+	}
+	@Test
+	public void methodOne() {
+		System.out.println("Test");
+
+	}
+	@Test
+	public void methodTwo() {
+
+		Assert.assertEquals(12, 13);
+
 	}
 
 }
