@@ -12,7 +12,7 @@ public class BaseClass {
 	
 	@Test
 	public void setup() {
-		System.setProperty("webdriver.chrome.driver", "/Users/waqaskhan/Downloads/chromedriver");
+		System.setProperty("webdriver.chrome.driver", "drivers/chromedriver2");
 		WebDriver  driver = new ChromeDriver();
 //	    driver.manage().window().fullscreen();
 	    driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
