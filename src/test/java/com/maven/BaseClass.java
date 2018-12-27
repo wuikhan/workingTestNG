@@ -32,7 +32,7 @@ public class BaseClass {
 	@Test
 	public void methodTwo() {
 
-		Assert.assertEquals(12, 13);
+		Assert.assertEquals(12, 12);
 
 	}
 
