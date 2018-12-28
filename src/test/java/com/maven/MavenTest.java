@@ -9,5 +9,13 @@ public class MavenTest {
 	public void hello() {
 		System.out.println("This is my first maven test");
 	}
+	@Test
+	public void methodOne() {
+		System.out.println("This is my first maven test");
+	}
+	@Test
+	public void methodTwo() {
+		System.out.println("This is my first maven test");
+	}
 
 }
