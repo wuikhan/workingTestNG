@@ -29,6 +29,7 @@ public class BaseClass {
 	public void methodOne() {
 		System.out.println("Test");
 
+		
 	}
 	@Test
 	public void methodTwo() {
