@@ -23,6 +23,7 @@ public class BaseClass {
 	    driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
 	    driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	    driver.get("https://opensource-demo.orangehrmlive.com/");
+	    
 	}
 	@Test
 	public void methodOne() {
